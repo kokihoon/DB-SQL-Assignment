@@ -1,0 +1,3 @@
+SELECT VOICE
+FROM CARTOON
+WHERE LOWER(TITLE) = 'little mermaid';
