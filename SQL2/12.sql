@@ -1,0 +1,1 @@
+SELECT COUNT(DISTINCT title), AVG(length) FROM StarsIn, Movie WHERE title = MovieTitle AND lower(StarName) = 'harrison ford';

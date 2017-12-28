@@ -1,0 +1,2 @@
+SELECT DISTINCT starname FROM StarsIn, MovieStar WHERE starName = MovieStar.name AND lower(gender) = 'female' AND lower(movietitle) != 'sting'
+MINUS SELECT starName FROM StarsIn, MovieStar WHERE starName = MovieStar.name AND lower(movieTitle) = 'sting';

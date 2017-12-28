@@ -1,0 +1,1 @@
+SELECT studioName, AVG(length), MIN(year), COUNT(title) FROM Movie GROUP BY studioName ORDER BY COUNT(title) DESC;

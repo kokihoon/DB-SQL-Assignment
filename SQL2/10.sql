@@ -1,0 +1,1 @@
+SELECT AVG(netWorth) FROM MovieExec WHERE name IN (SELECT MovieStar.name FROM Movie, MovieStar, StarsIn, MovieExec WHERE MovieStar.name = MovieExec.name AND Movie.title = StarsIn.MovieTitle AND MovieExec.certNo = Movie.producerNo);
